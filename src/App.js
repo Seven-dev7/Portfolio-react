@@ -19,7 +19,7 @@ class App extends Component {
                             <Link to="/contact">Contact</Link>
                         </Navigation>
                     </Header>
-                    <Drawer className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/"> Portfolio</Link>} scroll>
+                    <Drawer title={<Link style={{textDecoration: 'none', color: 'purple'}} to="/"> Portfolio</Link>}>
                         <Navigation>
                             <Link to="/resume">Resume</Link>
                             <Link to="/aboutme">About me</Link>
