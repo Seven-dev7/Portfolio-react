@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Layout, Header, Drawer, Content, Navigation } from 'react-mdl';
+import Main from './components/main';
+import {Link} from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
@@ -9,24 +11,25 @@ class App extends Component {
     return(
             <div className="demo-big-content">
                 <Layout>
-                    <Header title="Title" scroll>
+                    <Header title="Portfolio" scroll>
                         <Navigation>
-                            <a href="/">Link</a>
-                            <a href="/">Link</a>
-                            <a href="/">Link</a>
-                            <a href="/">Link</a>
+                            <Link to="/resume">Resume</Link>
+                            <Link to="/aboutme">About me</Link>
+                            <Link to="/projects">Projects</Link>
+                            <Link to="/contact">Contact</Link>
                         </Navigation>
                     </Header>
-                    <Drawer title="Title">
+                    <Drawer title="Portfolio">
                         <Navigation>
-                            <a href="/">Link</a>
-                            <a href="/">Link</a>
-                            <a href="/">Link</a>
-                            <a href="/">Link</a>
+                            <Link to="/resume">Resume</Link>
+                            <Link to="/aboutme">About me</Link>
+                            <Link to="/projects">Projects</Link>
+                            <Link to="/contact">Contact</Link>
                         </Navigation>
                     </Drawer>
                     <Content>
                         <div className="page-content" />
+                        <Main />
                     </Content>
                 </Layout>
             </div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Landingpage extends {Component} {
+class LandingPage extends Component {
 
     render() {
         return(
@@ -13,4 +13,4 @@ class Landingpage extends {Component} {
 
 
 
-export default Landingpage;
+export default LandingPage;
