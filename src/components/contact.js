@@ -5,7 +5,7 @@ class Contact extends Component {
 
     render() {
         return(
-            <div className="contact-body backgroundcolor">
+            <div className="contact-body">
                 <Grid className="contact-grid">
                     <Cell col={6}>
                         <h2> Bendifallah Oussama </h2>
