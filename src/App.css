@@ -25,6 +25,13 @@
   display: flex;
 }
 
+/* Resume Css */
+
+.resume-right-col {
+  background: black;
+  color:white;
+}
+
 /* contact style */
 
 .contact-grid {
