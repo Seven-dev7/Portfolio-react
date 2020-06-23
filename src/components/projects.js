@@ -70,7 +70,7 @@ class Projects extends Component {
             )
         } else if(this.state.activeTab === 1) {
             return (
-                <div><h1>This is React</h1></div>
+                <div><h1>This is Ruby on Rails</h1></div>
             )
         } else if(this.state.activeTab === 2) {
             return (
@@ -81,7 +81,7 @@ class Projects extends Component {
 
     render() {
         return(
-            <div className="category-tabs">
+            <div className="category-tabs backgroundcolor">
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})} ripple>
                     <Tab>React </Tab>
                     <Tab>Ruby on Rails </Tab>

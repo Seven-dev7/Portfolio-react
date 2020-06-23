@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import Education from './education';
+import Experience from './experience';
+import Skills from './skills';
 import { Grid, Cell} from 'react-mdl';
 
 class Resume extends Component {
 
     render() {
         return(
-            <div>
+            <div className="backgroundcolor">
                 <Grid className="resume-grid">
                     <Cell col={4}>
                         <div style={{textAlign: 'center'}}>
@@ -38,10 +41,62 @@ class Resume extends Component {
                         <h5> Email : </h5>
                         <p> ouss@yopmail.Com</p>
                         <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-                        
+
                     </Cell>
                     <Cell col={8} className="resume-right-col">
-                        Right side
+                        <h2 style={{marginTop: '20px', marginLeft: '40%', justifyContent: 'center'}}>Education</h2>
+                        <Education
+                            startYear="Avril 2019"
+                            endYear="Juin 2019"
+                            schoolName="The Hacking Project"
+                            schoolDescription="Bootcamp Ruby On Rails"
+                        />
+                        <Education
+                            startYear={2010}
+                            endYear={2013}
+                            schoolName="Institut de Formation Infirmier"
+                            schoolDescription="Ecole d'infirmier au sein du groupe APHP"
+                        />
+                        <hr style={{borderTop: '3px solid #e22947'}}/>
+
+                        <h2 style={{marginTop: '20px', marginLeft: '40%', justifyContent: 'center'}}>Experiences</h2>
+                        <Experience 
+                            startYear="Juin 2019"
+                            endYear="Aout 2019"
+                            jobName="Gracie Barra Paris"
+                            jobDescription="Refonte global du site, avec ajout d'un systeme d'utilisateur et de paiement en lignes des cotisations abonnés"
+                        />
+                        <Experience 
+                            startYear="Septembre 2019"
+                            endYear="Decembre 2019"
+                            jobName="Top Educs Corporation"
+                            jobDescription="Refonte global du site, avec création d'une application de gestion de ses collabrateurs afin de pouvoir faciliter les actions de dispatchement et de comptabilitées"
+                        />
+
+                        <hr style={{borderTop: '3px solid #e22947'}}/>
+
+                        <h2 style={{marginTop: '20px', marginLeft: '40%', justifyContent: 'center'}}>Skills</h2>
+
+                        <Skills
+                            skill="HTML/CSS"
+                            progress={70}
+                        />
+                        <Skills
+                            skill="Ruby"
+                            progress={60}
+                        />
+                        <Skills
+                            skill="Ruby on Rails"
+                            progress={60}
+                        />
+                        <Skills
+                            skill="Javascript"
+                            progress={40}
+                        />
+                        <Skills
+                            skill="ReactJS"
+                            progress={30}
+                        />
                     </Cell>
                 </Grid>
             </div>

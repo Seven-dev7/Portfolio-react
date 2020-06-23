@@ -4,7 +4,7 @@ class Aboutme extends Component {
 
     render() {
         return(
-            <div>
+            <div className="backgroundcolor">
                 <h1>Aboutme Page</h1>
             </div>
         )
